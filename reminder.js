@@ -9,7 +9,7 @@ var CronJob = require('cron').CronJob;
 
 var notes = [];
 
-bot.onText(/\/напомни (.+) at (.+)/, (msg, match) => {
+bot.onText(/\/remind (.+) at (.+)/, (msg, match) => {
     var userId = msg.from.id;
     var text = match[1];
     var time = match[2];
